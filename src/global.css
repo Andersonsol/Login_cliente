@@ -1,0 +1,131 @@
+/*Remover as bordas da pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+/*Aplicar o arquivo html, que possui a fonte de configuracçaão do texto da tela*/
+html, body{
+    font-family:'inter',sans-serif;
+}
+/*Configuação inicial da tela de login*/ 
+.container{
+    width: 100vw;
+    height: 100vw;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*Configuracão do cabeçalho*/
+.container .header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+/*Configuracão da logo em relação ao span */
+.container .header span{
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 20 px;
+    line-height: 24px;
+}
+/*Configuracão do formulario da aplicação*/
+.conteiner form{
+    display:flex ;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.conteiner form .inputContainer{
+    display:flex ;
+    align-items: flex-start;    
+    flex-direction: column;    
+}
+/*Estilizar o nosso label ou email */
+.conteiner form .inputContainer label{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom:8px; 
+    align-items: center;
+    flex-direction: column; 
+}
+/*Estilizar o nosso input ou password */
+.conteiner form .inputContainer input{
+    display:flex ;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 16px;
+    
+    width: 520px;
+    height: 49px;
+
+    border: 1px solid #5c73Db; 
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+/*Estilizando o paragrafo esqueceu a senha*/
+.container form a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color:#5c73Db;
+}
+/*Estilizando o botão a aplicaçã*/
+.container form .button{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    width: 520px;
+    height: 40px;
+
+    background: #5c73Db;
+    border-radius: 12px;
+
+    font-size: 18px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color:#fff;
+}
+/*Para o botão ficar opaco quando vc passa o cursor em cima*/
+
+.container form .button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+/*Estilizando o footer da nossa aplicação*/ 
+.container form .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+/*Estilizando o paragrafo faça o seu cadastro*/
+.container form .footer p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+}
+/*Estilizando o link de acesso ao cadastro*/
+.container form .footer a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line:underline;
+    color:#5c73Db;
+}
